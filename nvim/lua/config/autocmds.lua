@@ -34,3 +34,9 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     set_tabstop_based_on_extension()
   end,
 })
+
+vim.api.nvim_create_autocmd("VimLeave", {
+  callback = function ()
+    vim.opt.guicursor = "a:ver25"
+  end
+})

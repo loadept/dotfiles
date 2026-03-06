@@ -60,6 +60,8 @@ return {
           gopls = {
             semanticTokens = true,
             staticcheck = true,
+            completeUnimported = true,
+            usePlaceholders = true,
             gofumpt = true,
           }
         },
