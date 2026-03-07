@@ -1,7 +1,3 @@
-vim.defer_fn(function()
-  -- vim.cmd("NvimTreeOpen")
-end, 100)
-
 local function set_tabstop_based_on_extension()
   local filename = vim.api.nvim_buf_get_name(0)
   local ext = filename:match("^.+%.([^%.]+)$")
