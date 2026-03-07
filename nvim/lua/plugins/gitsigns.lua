@@ -2,12 +2,12 @@ return {
   "lewis6991/gitsigns.nvim",
   event = { "BufReadPre", "BufNewFile" },
   keys = {
-    { "<leader>gp", "<cmd>Gitsigns prev_hunk<CR>", mode = "n" },
-    { "<leader>gn", "<cmd>Gitsigns next_hunk<CR>", mode = "n" },
-    { "<leader>gh", "<cmd>Gitsigns preview_hunk<CR>", mode = "n" },
-    { "<leader>gd", "<cmd>Gitsigns diffthis<CR>", mode = "n" },
-    { "<leader>gr", "<cmd>Gitsigns reset_hunk<CR>", mode = "n" },
-    { "<leader>gb", "<cmd>Gitsigns blame_line<CR>", mode = "n" },
+    { "<leader>gp", "<cmd>Gitsigns prev_hunk<cr>", mode = "n" },
+    { "<leader>gn", "<cmd>Gitsigns next_hunk<cr>", mode = "n" },
+    { "<leader>gh", "<cmd>Gitsigns preview_hunk<cr>", mode = "n" },
+    { "<leader>gd", "<cmd>Gitsigns diffthis<cr>", mode = "n" },
+    { "<leader>gr", "<cmd>Gitsigns reset_hunk<cr>", mode = "n" },
+    { "<leader>gb", "<cmd>Gitsigns blame_line<cr>", mode = "n" },
   },
   opts = {
     current_line_blame = true,

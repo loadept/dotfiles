@@ -17,7 +17,7 @@ return {
       options = {
         globalstatus = true,
         refresh = {
-          statusline = 700,
+          statusline = 500,
         },
       },
       sections = {
@@ -40,6 +40,7 @@ return {
             caps_lock,
             color = { fg = "#e78284" },
           },
+          "selectioncount",
           "fileformat",
         }
       },
