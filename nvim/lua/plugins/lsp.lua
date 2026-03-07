@@ -61,7 +61,6 @@ return {
             semanticTokens = true,
             staticcheck = true,
             completeUnimported = true,
-            usePlaceholders = true,
             gofumpt = true,
           }
         },
