@@ -2,6 +2,14 @@ return {
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   event = "VeryLazy",
+  init = function()
+    vim.g.lualine_laststatus = vim.o.laststatus
+    if vim.fn.argc(-1) > 0 then
+      vim.o.statusline = " "
+    else
+      vim.o.laststatus = 0
+    end
+  end,
   opts = function()
     local function caps_lock()
       local f = io.open("/sys/class/leds/input4::capslock/brightness", "r")
@@ -15,10 +23,10 @@ return {
 
     return {
       options = {
+        theme = "auto",
+        disabled_filetypes = { statusline = { "dashboard" } },
         globalstatus = true,
-        refresh = {
-          statusline = 500,
-        },
+        refresh = { statusline = 500 },
       },
       sections = {
         lualine_c = {
@@ -44,7 +52,13 @@ return {
           "fileformat",
         }
       },
-      extensions = { "nvim-tree", "fzf", "mason" },
+      extensions = {
+        "nvim-tree",
+        "lazy",
+        "fzf",
+        "mason",
+        "quickfix",
+      },
     }
   end
 }
