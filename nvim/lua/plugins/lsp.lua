@@ -17,8 +17,8 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    event = { "BufReadPre", "BufNewFile" },
     dependencies = { "williamboman/mason-lspconfig.nvim" },
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
       local function on_attach(_, bufnr)
         vim.api.nvim_create_user_command("ToggleInlineDiagnostics", function()

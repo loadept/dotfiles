@@ -1,7 +1,7 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
-  event = { "BufReadPre", "BufNewFile", "VeryLazy" },
   dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
+  event = { "BufReadPre", "BufNewFile", "VeryLazy" },
   opts = {
     code = {
       sign = false,

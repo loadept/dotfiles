@@ -1,6 +1,5 @@
 return {
   "folke/noice.nvim",
-  event = "VeryLazy",
   dependencies = {
     "MunifTanjim/nui.nvim",
     -- OPTIONAL:
@@ -8,5 +7,6 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
   },
+  event = "VeryLazy",
   opts = {},
 }
