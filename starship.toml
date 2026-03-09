@@ -1,0 +1,62 @@
+scan_timeout = 60
+add_newline = false
+
+[username]
+# style_user = "green"
+format = "[$user]($style) "
+disabled = true
+show_always = true
+
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](green)"
+
+[line_break]
+disabled = false
+
+[directory]
+style = "bold blue"
+truncation_length = 2
+truncation_symbol = "…/"
+
+[cmd_duration]
+format = "[$duration]($style) "
+
+[status]
+disabled = false
+format = "[$symbol $status]($style) "
+not_found_symbol = ""
+not_executable_symbol = ""
+sigint_symbol = "ﭦ"
+map_symbol = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+
+[package]
+disabled = true
+format = "[$symbol$version]($style) "
+symbol = "󰏗 "
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[php]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[java]
+format = "[${symbol}(${version} )]($style)"
+symbol = " "
+
+[rust]
+format = "[$symbol($version )]($style)"
+
+[golang]
+format = "[$symbol($version )]($style)"
+symbol = " "
