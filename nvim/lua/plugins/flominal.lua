@@ -44,6 +44,8 @@ return {
         state.floating = floating_window(state.floating.buf)
         if vim.bo[state.floating.buf].buftype ~= "terminal" then
           vim.cmd.terminal()
+          vim.api.nvim_buf_set_name(state.floating.buf, "Flominal")
+          vim.bo[state.floating.buf].buflisted = false
         end
         vim.cmd.startinsert()
       else
