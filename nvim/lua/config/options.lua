@@ -49,3 +49,9 @@ vim.opt.scrolloff = 10
 
 -- Smooth
 vim.opt.smoothscroll = true
+
+-- Confirm to save changes before exiting modified buffer
+vim.opt.confirm = true
+
+-- Fix markdown indentation settings
+vim.g.markdown_recommended_style = 0
