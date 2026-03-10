@@ -46,7 +46,6 @@ return {
       end
 
       vim.lsp.config("lua_ls", {
-        on_attach = on_attach,
         settings = {
           Lua = {
             diagnostics = { globals = { "vim" } },
@@ -55,7 +54,6 @@ return {
       })
 
       vim.lsp.config("gopls", {
-        on_attach = on_attach,
         settings = {
           gopls = {
             semanticTokens = true,
