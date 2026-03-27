@@ -22,3 +22,9 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.shiftwidth = config.shiftwidth
   end,
 })
+
+vim.filetype.add({
+  extension = {
+    tmpl = "html",
+  }
+})
